@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function Display(){
+      const container = document.getElementById('container') ;
+      container.style.background = "grey";
+       container.style.color = "darkblue";
+      container.style.padding = "15px";
+      container.style.borderRadius = "10px";
+      container.style.width = "fit-content";
+
+      document.getElementById('Name').innerHTML = `<h2>${document.getElementById('name').value} </h2>`;
+      document.getElementById('Branch').innerHTML = `<h2>${document.getElementById('branch').value} </h2>`;
+      document.getElementById('Skills').innerHTML = `<h2>${document.getElementById('skills').value} </h2>`;
+      document.getElementById('College').innerHTML = `<h2>${document.getElementById('college').value} </h2>`;
+      document.getElementById('University').innerHTML = `<h2>${document.getElementById('university').value} </h2>`;
+    }
+  </script>
+</head>
+<body>
+    <label for="name">Name - </label>
+     <input id="name" type="text">
+     <br> <br>
+     <label for="branch">Branch - </label>
+     <input id="branch" type="text">
+     <br> <br>
+     <label for="skills">Skills - </label>
+     <input id="skills" type="text">
+     <br> <br>
+     <label for="college">College - </label>
+     <input id="college" type="text">
+     <br> <br>
+     <label for="university">University - </label>
+     <input id="university" type="text">
+     <br> <br>
+    <button onclick="Display()">
+      Submit
+    </button>
+
+
+    <div id="container">
+      <div id="Name"></div>
+    <div id="Branch"></div>
+    <div id="Skills"></div>
+    <div id="College"></div>
+    <div id="University"></div>
+    </div>
+
+  
+</body>
+</html>

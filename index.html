@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background: #3498db;
+      position: relative;
+      animation: zigzag 5s linear infinite, changeColor 5s linear infinite;
+    }
+    @keyframes changeColor {
+      from { background-color: #3498db; }
+      to { background-color: black; }
+    }
+    @keyframes zigzag {
+      0%   { left: 0;   top: 0; }
+      20%  { left: 100px; top: 50px; }
+      40%  { left: 200px; top: 0; }
+      60%  { left: 300px; top: 50px; }
+      80%  { left: 400px; top: 0; }
+      100% { left: 0;   top: 0; }
+    }
+  </style>
 </head>
 <body>
-  <h2>Welcome to ABES Engineering College</h2>
+  <div class="box"></div>
 </body>
 </html>
